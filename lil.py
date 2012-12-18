@@ -1,7 +1,7 @@
 import sys, re, ast, z3
 
 # Pattern for parsing layout declarations
-pattern = re.compile('(?P<layout>\w+)\((?P<dim0>[^,)(]+), *(?P<dim1>[^,)(]+), *(?P<rest>.*)\)')
+pattern = re.compile('(?P<layout>\w+)\((?P<dim0>[^,]+), *(?P<dim1>[^,]+), *(?P<rest>.*)\)')
 
 class Z3Rewriter(ast.NodeTransformer):
     """
