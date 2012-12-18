@@ -9,8 +9,8 @@ Usage:
 
     $ python2.7 lil.py "ROWMAJ(8, 8, 1)"
     Concrete args:  f(3, 7) = 31
-    Symbolic args:  f(i, j) = 8\*i + j
-    Mixed args:     f(i\*3, j + m) = 24\*i + j + m
+    Symbolic args:  f(i, j) = 8*i + j
+    Mixed args:     f(i*3, j + m) = 24*i + j + m
 
 argv[1] should contain a layout descriptor of the form:
 
