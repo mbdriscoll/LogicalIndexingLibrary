@@ -8,7 +8,7 @@ class Z3Rewriter(ast.NodeTransformer):
     Convert all variables and numbers in a Python AST to Z3 elements.
     """
     def visit_Name(self, node):
-        """ Convert variables: foo -> z3.BitVecVal('foo', 32) """
+        """ Convert variables: foo -> z3.BitVec('foo', 32) """
         return ast.copy_location(
           ast.Call(
             func=ast.Attribute(value=ast.Name(id='z3', ctx=ast.Load()),
