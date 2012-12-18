@@ -6,13 +6,16 @@ Generate Indexing Expressions into Arbitrarily-Nested Row-Major, Column-Major, Z
 Requires z3 python module.
 
 Usage:
+
     $ python2.7 lil.py "ROWMAJ(8, 8, 1)"
     Concrete args:  f(3, 7) = 31
     Symbolic args:  f(i, j) = 8\*i + j
     Mixed args:     f(i\*3, j + m) = 24\*i + j + m
 
 argv[1] should contain a layout descriptor of the form:
+
     LAYOUT(n, m, k)
+
 where:
 *   LAYOUT can be ROWMAJ, COLMAJ, ZMORTON, or HILBERT,
 *   n is the number of rows,
