@@ -23,6 +23,6 @@ where:
 *   k is the element size, or another layout descriptor.
 
 Examples:
-*   ROWMAJ(4, 4, 1) : a four-by-four block of elements in row-major order
+*   ![ROWMAJ(4, 4, 1)](https://raw.github.com/mbdriscoll/LogicalIndexingLibrary/master/r44.png): a four-by-four block of elements in row-major order
 *   ZMORTON(4, 4, 1) : a four-by-four block of elements in z-morton order
 *   ZMORTON(4, 4, ROWMAJ(4, 4, 1)) : sixteen four-by-four blocks of row-major-ordered elements ordered along a Z-Morton curve.
